@@ -1,3 +1,5 @@
 FROM alpine
 
-COPY index.php /var/www/html/
+COPY index.php /data/
+
+ENTRYPOINT cp /data/index.php /var/www/html/
