@@ -1,3 +1,3 @@
-FROM gridorius/bitrix-env:latest
+FROM alpine
 
-COPY index.php .
+COPY index.php /var/www/html/
